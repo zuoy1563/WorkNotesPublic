@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game_store>
+    <video_games xmlns:v="http://www.w3.org/TR/html4/">
+        <game id="1">
+            <name>Assassin's Creed</name>
+            <directors>
+                <director>
+                    <id>123</id>
+                    <name>Jonathan Dumont</name>
+                </director>
+                <director>
+                    <id>124</id>
+                    <name>Scott Phillips</name>
+                </director>
+            </directors>
+            <price>79</price>
+        </game>
+        <game id="2">
+            <name>Resident Evil 2 Remake</name>
+            <directors>
+                <director>
+                    <id>233</id>
+                    <name>Kazunori Kadoi</name>
+                </director>
+                <director>
+                    <id>234</id>
+                    <name>Yasuhiro Anpo</name>
+                </director>
+            </directors>
+            <price>99</price>
+        </game>
+    </video_games>
+    <online_games>
+        <game>
+            <id>3</id>
+            <name>GranBlue Fantasy</name>
+            <directors>
+                <director>
+                    <id>555</id>
+                    <name>KMR</name>
+                </director>
+            </directors>
+        </game>
+    </online_games>
+</game_store>

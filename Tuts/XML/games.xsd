@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="game_store">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="video_games">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="game" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string"/>
+										<xs:element name="directors">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="director" minOccurs="1" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="id" type="xs:integer"/>
+																<xs:element name="name" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="price" type="xs:decimal"/>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:integer" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="online_games">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="game" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="id" type="xs:integer"/>
+										<xs:element name="name" type="xs:string"/>
+										<xs:element name="directors">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="director" minOccurs="1" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="id" type="xs:integer"/>
+																<xs:element name="name" type="xs:string"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
