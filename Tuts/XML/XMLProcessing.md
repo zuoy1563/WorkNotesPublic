@@ -104,7 +104,7 @@ Please see games.xq for example.
 XQuery Tips:
 - function body is enclosed by {}. It must end with a return statement
 - variable value is also enclosed by {}
-- use //NODE_NAME to avoid using for loops
+- avoid using //NODE_NAME, it slows down the performance
 
 
 Java side will use Saxon to run XQuery.
