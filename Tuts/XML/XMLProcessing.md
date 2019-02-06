@@ -5,6 +5,8 @@ Topics:
 - XML schema
 - XQuery
 - XPath
+- XSLT
+- JAXB
 
 # XML Basics
 ## XML structure
