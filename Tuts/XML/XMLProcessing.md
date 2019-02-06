@@ -59,7 +59,7 @@ Topics:
 **Note**: their should be a root element like ```<gamestore>``` to wrap other elements.
 
 ## XML Namespaces
-In the previous example, there are two different types of games and they have slightly different elements and attributes. Thus they cannot both be named as "games". To avoid conflict, use ```<v:games>``` and ```<o:games>``` to distinguish them and refer to a webpage to describe it. This page can be fake.
+In the previous example, if there were two different types of games and they have different elements and attributes, they cannot both be named as "games". To avoid conflict, use ```<v:games>``` and ```<o:games>``` instead to help distinguish them.
 
 Have a look at the following webpage for further information.
 >http://www.xmlmaster.org/en/article/d01/c10/
