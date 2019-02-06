@@ -95,7 +95,10 @@ XQuery Functions:
 
 XQuery tutorial:
 >https://www.tutorialspoint.com/xquery/index.htm
+
 >http://edutechwiki.unige.ch/en/XQuery_tutorial_-_basics
+
+>https://blogs.msdn.microsoft.com/xmlteam/2011/09/26/effective-xml-part-2-how-to-kill-the-performance-of-an-app-with-xpath/
 
 XQuery should be put in .xq files separately, just like SQL scripts.
 XPath are used altogether with XQuery.
