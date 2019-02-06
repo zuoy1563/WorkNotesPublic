@@ -11,7 +11,7 @@ Topics:
 # XML Basics
 ## XML structure
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <game_store>
     <video_games xmlns:v="http://www.w3.org/TR/html4/">
@@ -112,7 +112,7 @@ XQuery Tips:
 
 Java side will use Saxon to run XQuery.
 
-```
+```java
     @Test
     private void executeXQuery(String filename, String externalVariable) throws Exception {
         Processor saxon = new Processor(false);
@@ -134,7 +134,7 @@ XSLT tutorial:
 
 Java side function call:
 
-```
+```java
     // for generating xml or html using saxon 9.9
     private void generateDocumentByXSL(String type) throws Exception {
         type = type.toLowerCase();
@@ -153,7 +153,7 @@ Java side function call:
 
 # JAXB
 Maven plugin for generating pojo classes according to .xsd files
-```
+```xml
     ...
     <build>
         <plugins>
@@ -195,7 +195,7 @@ Tips:
 Marshal: transform an object into xml
 
 Java side code:
-```
+```java
     private void marshal(String schemaName, Object object) throws Exception {
         JAXBContext jaxbContext = JAXBContext.newInstance(object.getClass());
         Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
@@ -215,7 +215,7 @@ Java side code:
 Unmarshal: transform xml into an objct
 
 Java side code:
-```
+```java
     private Object unmarshal(String schemaName, String xmlName, Class targetClass) throws Exception {
         SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         Schema schema = sf.newSchema(new File(SCHEMA_PATH));
